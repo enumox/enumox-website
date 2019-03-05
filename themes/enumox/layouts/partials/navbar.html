@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler center"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span>menu</span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto center">
+            
+            <li class="nav-item center">
+                <a id="link-home" class="nav-link {{if .Dir eq ``}} active {{end}}" href="/">_home</a>
+            </li>
+            <!-- <li class="nav-item center">
+                <a id="link-home" class="nav-link" href="/games">_games</a>
+            </li> 
+
+            <li class="nav-item center">
+                <a id="link-tutorials" class="nav-link" href="/tutorials">_tutorials</a>
+            </li>
+
+            <li class="nav-item center">
+                <a class="nav-link" href="/about">_about</a>
+            </li> -->
+
+        </ul>
+    </div>
+</nav>
+
+{{define "page-scripts"}}
+<script>
+    if (window.location.pathname == "/") {
+        $('#link-home').addClass('active')
+    } else if (window.location.pathname == "/tutorials") {
+        $('#link-tutorials').addClass('active')
+    }
+</script>
+{{end}}

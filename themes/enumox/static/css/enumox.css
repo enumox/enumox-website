@@ -1,0 +1,83 @@
+body {
+    background-color: #303030 !important;
+    font-family: 'Baloo Bhai', cursive;
+    color: #fff;
+    min-height: 100%;
+}
+
+span {
+    color: #fff;
+}
+
+#logo {
+    max-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.hero-area {
+    padding: 15px;
+}
+
+
+.center {
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.active {
+    background-color: #404040;
+    border-radius: 25px;
+}
+
+.footer {
+    min-height: 75px;
+    margin-top: 50px;
+}
+
+.social-media {
+    color: #13b75c;
+    margin-left: 15px;
+    margin-right: 15px;
+    
+}
+
+.list-container {
+    background-color: #404040;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    display:block;
+}
+
+.list-container > h4 {
+    color: #13b75c;
+}
+
+.list-container > .post-info {
+    font-size: 0.85em;
+}
+.list-container > .post-info > p > span > i {
+    color: #4e806c;
+}
+
+
+.list-container > p  {
+    color: #d1d1d1;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #ebebeb;
+}
+
+a:hover {
+    color: #13b75c;
+    text-decoration: none;
+}

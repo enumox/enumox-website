@@ -1,0 +1,10 @@
+{{define "main"}}
+    <div class="hero-area text-center">
+        <h1>welcome to Enumox</h1>
+        <h4>it's <i>awesome</i> to have you here</h4>
+    </div>
+
+    {{range .Pages}}
+        {{ partial "post-list-container.html" . }}
+    {{end}}
+{{end}}

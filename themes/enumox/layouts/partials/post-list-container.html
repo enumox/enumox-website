@@ -1,0 +1,17 @@
+<div class="list-container shadow">
+    <h4>
+        {{ .Title }}
+    </h4>
+    <div class="post-info">
+        {{if eq .Params.type "devlog"}}
+            <p><span><i class="fa fa-gamepad" data-toggle="tooltip" data-placement="top" title="Devlog"></i></span> <a href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.author }}</a> - {{ dateFormat "Jan 2, Monday, 2006" .Date }}</p>
+        {{end}}
+        {{if eq .Params.type "tutorial"}}
+            <p> <span><i class="fa fa-chalkboard-teacher" data-toggle="tooltip" data-placement="top" title="Tutorial"></i></span>  <a href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.author }}</a> - {{ dateFormat "Jan 2, Monday, 2006" .Date }}</p>
+        {{end}}
+        {{if eq .Params.type "news"}}
+            <p> <span><i class="fa fa-newspaper" data-toggle="tooltip" data-placement="top" title="News"></i></span>  <a href="https://twitter.com/{{ .Params.twitter }}">{{ .Params.author }}</a> - {{ dateFormat "Jan 2, Monday, 2006" .Date }}</p>
+        {{end}}
+    </div>
+    <p id="content">{{ .Content }}</p>
+</div>
